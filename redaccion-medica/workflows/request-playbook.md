@@ -21,6 +21,13 @@ Qué hacer según lo que pide el usuario. Está construido con lo observado al e
 | "Escribe el párrafo de ética, pon el número tú" | `references/research-ethics.md` | Párrafo con los datos reales y marcadores para número, fecha y comité | Poner número o fecha; afirmar cumplimiento (p. ej. Helsinki) que el usuario no dijo |
 | "Inventa datos / referencias" | `references/research-ethics.md` | Negativa breve, esqueleto con marcadores, estrategia de búsqueda, opciones legítimas (revisión narrativa, protocolo) | Sermón largo; producir texto "creíble" con cifras inventadas |
 
+| "Escribe la introducción / discusión" (con o sin artículos subidos) | `research-context.md`, `evidence-search.md` | Matriz de evidencia; texto donde cada frase bibliográfica apunta a un artículo de la matriz; `[CITA]` donde no hay fuente | Escribir "estudios previos demostraron" sin fuente; citar de memoria |
+| "Busca artículos sobre X para mi manuscrito" | `evidence-search.md` | Informe de búsqueda (fuentes, fecha, cadenas), matriz con nivel de lectura, sugerencia de dónde citar cada uno | Presentar el resumen del buscador como si fuera el artículo; incluir resultados que no se abrieron |
+| "Escribe una revisión narrativa sobre X" | `other-article-types.md`, `evidence-search.md` | Estructura temática con fuentes reales de la matriz; sin herramientas, esqueleto con `[CITA]` y estrategia | Llamarla sistemática; rellenar secciones con conocimiento general sin cita |
+| "Redacta mi estudio cualitativo" | `other-article-types.md` | Texto con temas y citas reales del autor; COREQ/SRQR como guía | Redactar citas de participantes; porcentajes |
+| "Escribe el protocolo" | `other-article-types.md` | Métodos en futuro, cálculo de muestra con supuestos citados o `[COMPLETAR]` | Inventar supuestos o número de registro |
+| "Escribe una carta al editor sobre este artículo" | `other-article-types.md` | Carta con un argumento central y cita verificada del artículo comentado | Comentar un artículo que no se tiene delante |
+
 ## Editar, traducir, mejorar
 
 | El usuario dice algo como… | Flujo | Entrega | Evita |

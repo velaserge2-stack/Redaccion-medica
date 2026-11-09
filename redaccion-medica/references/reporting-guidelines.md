@@ -17,6 +17,9 @@ Principio: elegir por **diseño del estudio**, no por costumbre. Verificar la ve
 | Estudios con animales | ARRIVE | Verificar versión (2.0). |
 | Presentación estadística | SAMPL | Complementa, no reemplaza. |
 | Uso de IA generativa en la investigación | GAMER (listada en EQUATOR) | Complementa la declaración exigida por la revista. |
+| Investigación cualitativa | COREQ (entrevistas y grupos focales); SRQR | Verificar versión y vigencia (no comprobadas en el desarrollo del skill, N3). |
+| Protocolo de revisión sistemática | PRISMA-P | Verificar versión (N3). |
+| Revisión narrativa | SANRA (escala de calidad, no guía de reporte) | Verificar (N3). Orientativa. |
 
 ## Reglas de uso
 - Si un diseño cae entre dos guías (p. ej., estudio observacional con modelo predictivo), indicar ambas y explicar cuál es principal.

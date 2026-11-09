@@ -15,6 +15,7 @@ Objetivo ↔ métodos ↔ resultados ↔ conclusiones. Diseño rotulado = diseñ
 
 ## C. Bibliografía
 Cada referencia: existe, metadatos correctos, respalda la afirmación, vigente. Citas ↔ lista 1:1. Listar las no verificadas con `[VERIFICAR]`. Declarar si solo se leyó el resumen.
+Procedencia: cada referencia viene de un artículo subido o de un registro recuperado en la sesión (anotar cuál en la matriz de evidencia). Ninguna afirmación bibliográfica sin fila en la matriz; ninguna referencia añadida de memoria. Las cifras citadas de otros estudios coinciden con las de la fuente.
 
 ## D. Lenguaje
 Gramática, claridad, terminología consistente, tiempos verbales, siglas definidas, variante del inglés, falsos cognados y calcos.

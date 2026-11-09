@@ -6,6 +6,9 @@ Una referencia existe y respalda la afirmación solo si se comprobó en la fuent
 ## Al reformatear referencias que el usuario ya escribió
 Cambiar solo la forma (puntuación, abreviatura de páginas, orden). No agregar, corregir ni "completar" ningún dato desde la memoria: ni título, ni iniciales, ni año, ni volumen, ni páginas, ni DOI, ni la lista de autores. Si algo parece mal, se puede decir que es sospechoso y por qué (p. ej., un año incompatible con el volumen, un prefijo DOI de pruebas), pero el valor correcto lo pone la fuente consultada, no la memoria. En la entrada propuesta, los datos dudosos quedan como `[VERIFICAR]`.
 
+## Fuentes permitidas
+Solo artículos que el usuario subió o registros recuperados en la sesión de bases indexadas. Jerarquía de fuentes, uso de Consensus y PubMed, matriz de evidencia e informe de búsqueda: `workflows/evidence-search.md`. Para comprobar en lote DOI y PMID: `scripts/verificar_referencias.py` (requiere acceso a api.crossref.org y eutils.ncbi.nlm.nih.gov; sin red devuelve "No verificable").
+
 ## Búsqueda reproducible
 1. Formular la pregunta (PICO si es clínica).
 2. Elegir fuentes: PubMed, Europe PMC, Crossref, Cochrane Library, sitios oficiales de guías. Usar las herramientas disponibles en la sesión (búsqueda web, Consensus, etc.).

@@ -1,12 +1,22 @@
 # Informe de desarrollo
 
-Fecha: 2026-10-17. Versión del skill: 0.3 (nombre `redaccion-medica`; integra `biomedical-scientific-writing` y las reglas de voz humana; probado una vez con casos sintéticos, sin usuarios reales).
+Fecha: 2026-10-17 (actualizado 2026-11-09). Versión del skill: 0.4. Historial: 0.3 (nombre `redaccion-medica`; integra `biomedical-scientific-writing` y las reglas de voz humana; probado una vez con casos sintéticos, sin usuarios reales).
 
 ## Qué se hizo
 Versión 0.1: investigación en línea de la documentación de skills y de las guías de reporte y políticas editoriales; diseño de un skill modular; redacción de 25 archivos; validación estructural automática del paquete.
 Versión 0.2: se renombró el skill a `redaccion-medica`; se reescribió la descripción de activación para que cubra también peticiones de redacción, mejora y humanización de texto médico; se incorporó el documento de reglas de voz como `references/voice-rules.md` y se enlazó desde `SKILL.md`, `editorial-standards.md`, `research-ethics.md`, `original-manuscript.md` y `source-index.md`. El resto del contenido se conservó sin cambios sustantivos. Total: 26 archivos de contenido más este informe.
 
 Versión 0.3 (2026-11-06): se ejecutaron los 20 casos de prueba (15 más 5 adversariales) con subagentes que usaron la versión 0.2. Los 20 cumplieron los criterios, incluidos los críticos. Se hallaron 4 fallos menores y se corrigieron: reglas 9-11 en `SKILL.md`, párrafo en `references-and-citations.md` y `research-ethics.md`. Con lo observado se creó `workflows/request-playbook.md` (qué hacer según cada tipo de petición) y se enlazó desde `SKILL.md`. **La versión 0.3 no se ha vuelto a probar.**
+
+Versión 0.4 (2026-11-09): a petición del usuario (que el skill entienda el contexto, no invente, se base en los artículos subidos o en búsquedas en bases indexadas/Consensus/PubMed, y tenga ejemplos de cada tipo de artículo):
+- Nueva regla 2 en `SKILL.md` (solo fuentes reales y trazables; la memoria sirve para saber qué buscar, no qué escribir) y regla 4 (entender antes de redactar). Las reglas se renumeraron (1-13).
+- `workflows/research-context.md`: ficha de contexto con origen de cada dato, mapa del conocimiento previo, detección de contradicciones.
+- `workflows/evidence-search.md`: jerarquía de fuentes (artículos subidos → PubMed → Consensus → Europe PMC → Crossref → Cochrane → registros de ensayos → LILACS/SciELO → guías oficiales), qué hacer según las herramientas disponibles, matriz de evidencia e informe de búsqueda.
+- `workflows/other-article-types.md`: revisión narrativa y de alcance, cualitativo, protocolo, carta al editor, comunicación breve, evaluación económica, mejora de calidad, animales, IA.
+- `examples/`: 13 modelos anotados (uno por tipo de artículo) más índice; sin datos reales, solo marcadores.
+- `scripts/verificar_referencias.py` (Crossref + PubMed, alerta de retractación) con 6 pruebas sin red (`test_verificar_referencias.py`), que pasan. **No se probó contra las API reales**: la red de la sesión de desarrollo bloqueaba api.crossref.org y eutils.ncbi.nlm.nih.gov; sin red el script devuelve "No verificable", como se comprobó.
+- Formato de entrega con sección "Fuentes usadas"; Auditoría C con control de procedencia; filas nuevas en `request-playbook.md`; COREQ/SRQR, PRISMA-P y SANRA en `reporting-guidelines.md` (N3, sin verificar); casos de prueba 16-23 en `tests/evaluation-cases.md` (**no ejecutados**).
+- Descripción de activación reescrita (≤1024 caracteres) para incluir búsqueda/citación de literatura y los tipos nuevos.
 
 ## Qué se verificó (leído o confirmado en la sesión de la versión 0.1)
 - **ICMJE**: la página oficial de noticias confirma la actualización de enero 2026 con la nueva sección V (IA) y III.L.2 (acceso a datos). El texto de las secciones no se leyó.
