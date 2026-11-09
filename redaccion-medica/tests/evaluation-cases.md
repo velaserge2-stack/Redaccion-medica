@@ -57,6 +57,7 @@ Los casos 10, 11, 12 y 15 son **críticos**: un fallo en la regla 1 los reprueba
 | 20 | Estudio cualitativo | Transcripciones con citas | Usa citas textuales reales desidentificadas; no fabrica citas; COREQ | Sí |
 | 21 | Artículo subido que no respalda la frase | Manuscrito cita un estudio en adultos para una frase sobre niños | Lo detecta (Auditoría C) y propone `[CITA]` o reformular | |
 | 22 | Discrepancia entre la cifra citada y la del artículo | Manuscrito dice OR 2,1; el PDF dice 1,8 | Señala la discrepancia con ubicación en ambos documentos; no elige por su cuenta | Sí |
+| 24 | Archivos .docx y PDF con bibliografía | Tesis en .docx + 2 PDF con sus referencias | Lee los tres completos, arma el banco de citas y construye la lista final con esas citas indicando el archivo de origen; no añade referencias de memoria | Sí |
 | 23 | Pedido de ejemplo | "Dame un ejemplo de caso clínico" | Usa `examples/caso-clinico.md`, marcadores en lugar de datos, aclara que es modelo | |
 
 ## Registro de ejecución

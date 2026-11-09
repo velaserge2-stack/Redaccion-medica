@@ -6,6 +6,9 @@ Una referencia existe y respalda la afirmación solo si se comprobó en la fuent
 ## Al reformatear referencias que el usuario ya escribió
 Cambiar solo la forma (puntuación, abreviatura de páginas, orden). No agregar, corregir ni "completar" ningún dato desde la memoria: ni título, ni iniciales, ni año, ni volumen, ni páginas, ni DOI, ni la lista de autores. Si algo parece mal, se puede decir que es sospechoso y por qué (p. ej., un año incompatible con el volumen, un prefijo DOI de pruebas), pero el valor correcto lo pone la fuente consultada, no la memoria. En la entrada propuesta, los datos dudosos quedan como `[VERIFICAR]`.
 
+## Citas de los archivos subidos (prioridad)
+La lista final de referencias se arma con las citas que traen los archivos que subió el usuario (PDF, .docx, .md): banco de citas en `workflows/research-context.md` §1b. Se respeta cada cita tal como viene, se ajusta solo el formato y se anota el archivo de origen. Las referencias obtenidas por búsqueda propia van aparte y rotuladas.
+
 ## Fuentes permitidas
 Solo artículos que el usuario subió o registros recuperados en la sesión de bases indexadas. Jerarquía de fuentes, uso de Consensus y PubMed, matriz de evidencia e informe de búsqueda: `workflows/evidence-search.md`. Para comprobar en lote DOI y PMID: `scripts/verificar_referencias.py` (requiere acceso a api.crossref.org y eutils.ncbi.nlm.nih.gov; sin red devuelve "No verificable").
 

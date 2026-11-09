@@ -31,6 +31,11 @@ No hace falta para: una duda médica suelta, un resumen de un artículo ajeno si
 12. Al reformatear una referencia que el usuario escribió, no completar ni corregir ningún dato desde la memoria (título, iniciales, año, páginas, DOI): se marca `[VERIFICAR]` o se corrige solo con la fuente consultada, avisando.
 13. Datos personales de pacientes pegados en el chat (nombre, CURP, fechas exactas, hospital) no se reproducen: se desidentifica y se avisa.
 
+## Archivos del usuario y sus citas
+- Al activarse el skill, **leer primero todos los archivos que subió el usuario**: PDF, Markdown (.md), Word (.docx) y texto. Leerlos completos (texto, tablas y lista de referencias), no solo el inicio. Si un archivo no se puede abrir o leer (PDF escaneado, .docx dañado), decirlo y pedir otra versión; no suponer su contenido. Cómo leer cada formato: `workflows/research-context.md` §1.
+- Extraer las **citas y listas de referencias** que traen esos archivos a un banco de citas (`workflows/research-context.md` §1b).
+- **Al final, la lista de referencias del manuscrito se arma con las citas que vienen en los archivos subidos**: se usan esas citas tal como aparecen en el archivo (solo se ajusta el formato al estilo de la revista) y se indica de qué archivo salió cada una. Las referencias recuperadas por búsqueda propia se añaden aparte, marcadas como tales, solo si el usuario lo acepta o si los archivos no cubren una afirmación.
+
 ## Flujo principal
 1. **Contexto de la investigación** (`workflows/research-context.md` y `checklists/prewriting.md`): leer todo lo que el usuario aportó, llenar la ficha de contexto con el origen de cada dato, detectar contradicciones y faltantes. Si falta algo esencial, preguntar una vez de forma agrupada; si el usuario no está disponible, continuar con marcadores y declarar la lectura adoptada.
 2. **Evidencia** (`workflows/evidence-search.md`): primero los artículos subidos; después búsqueda en PubMed/Consensus/Europe PMC si hay herramientas. Construir la matriz de evidencia (autor, año, diseño, n, hallazgo, cómo se obtuvo, nivel de lectura).
@@ -74,10 +79,11 @@ Nunca escribir "libre de errores". Indicar qué se revisó, qué no pudo verific
 
 ## Formato de entrega
 1. El texto solicitado (o archivo, si pidieron .docx/.pdf).
-2. **Fuentes usadas**: matriz de evidencia resumida (qué artículo respalda qué afirmación, cómo se obtuvo, si se leyó completo o solo el resumen) e informe de búsqueda si se buscó.
-3. Lista breve de marcadores pendientes (`[COMPLETAR]`, `[VERIFICAR]`, `[CITA]`).
-4. Resultado de auditorías aplicables (tres estados) con alcance.
-5. Recordatorio: revisión por los autores, declaración de uso de IA, y que el cumplimiento de guía no garantiza aceptación.
+2. **Referencias**: lista final construida con las citas de los archivos subidos (con el archivo de origen de cada una), seguida, si las hay, de las recuperadas por búsqueda, rotuladas aparte.
+3. **Fuentes usadas**: matriz de evidencia resumida (qué artículo respalda qué afirmación, cómo se obtuvo, si se leyó completo o solo el resumen) e informe de búsqueda si se buscó.
+4. Lista breve de marcadores pendientes (`[COMPLETAR]`, `[VERIFICAR]`, `[CITA]`).
+5. Resultado de auditorías aplicables (tres estados) con alcance.
+6. Recordatorio: revisión por los autores, declaración de uso de IA, y que el cumplimiento de guía no garantiza aceptación.
 
 ## Voz
 Conservar la voz de los autores al editar. Evitar muletillas genéricas ("es crucial destacar", "en el panorama actual"), cierres con moraleja repetida y listas de limitaciones de plantilla. Las reglas de estilo ceden ante las instrucciones de la revista y las convenciones de la disciplina. El detalle (42 reglas, ejemplos antes/después y prompt de sistema) está en `references/voice-rules.md`; los ejemplos de corrección, en `examples/before-and-after.md`.

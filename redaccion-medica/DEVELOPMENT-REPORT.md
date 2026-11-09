@@ -16,6 +16,7 @@ Versión 0.4 (2026-11-09): a petición del usuario (que el skill entienda el con
 - `examples/`: 13 modelos anotados (uno por tipo de artículo) más índice; sin datos reales, solo marcadores.
 - `scripts/verificar_referencias.py` (Crossref + PubMed, alerta de retractación) con 6 pruebas sin red (`test_verificar_referencias.py`), que pasan. **No se probó contra las API reales**: la red de la sesión de desarrollo bloqueaba api.crossref.org y eutils.ncbi.nlm.nih.gov; sin red el script devuelve "No verificable", como se comprobó.
 - Formato de entrega con sección "Fuentes usadas"; Auditoría C con control de procedencia; filas nuevas en `request-playbook.md`; COREQ/SRQR, PRISMA-P y SANRA en `reporting-guidelines.md` (N3, sin verificar); casos de prueba 16-23 en `tests/evaluation-cases.md` (**no ejecutados**).
+- Sección "Archivos del usuario y sus citas" en `SKILL.md`: leer completos los PDF, .md y .docx subidos; banco de citas (`research-context.md` §1b); la lista final de referencias se construye con las citas de esos archivos, con su archivo de origen. Caso de prueba 24 (no ejecutado).
 - Descripción de activación reescrita (≤1024 caracteres) para incluir búsqueda/citación de literatura y los tipos nuevos.
 
 ## Qué se verificó (leído o confirmado en la sesión de la versión 0.1)

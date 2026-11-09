@@ -14,6 +14,30 @@ Orden de lectura recomendado:
 
 Si un archivo no se puede abrir o está incompleto (PDF escaneado, tabla cortada), decirlo de inmediato; no suponer su contenido.
 
+### Cómo leer cada formato
+| Formato | Cómo leerlo |
+|---|---|
+| PDF | Leer el texto completo con la lectura de PDF disponible (skill o herramienta de PDF, o `pdftotext -layout`). En PDF largos, leer por páginas hasta el final, incluidas tablas y referencias. Si es escaneado (sin texto), avisar o usar OCR si está disponible. |
+| Word (.docx) | Usar el skill o herramienta de .docx disponible (o `pandoc archivo.docx -t markdown`). Revisar también tablas, notas al pie, comentarios y control de cambios: pueden contener datos o referencias. |
+| Markdown (.md) / texto | Leer directamente, completo. |
+| Hojas de cálculo (.xlsx, .csv) | Leer con la herramienta de hojas de cálculo; las cifras se toman de ahí, sin redondear de nuevo. |
+
+Al terminar, decir qué archivos se leyeron y si alguno se leyó solo en parte.
+
+## 1b. Banco de citas de los archivos subidos
+
+Mientras se leen los archivos, extraer **todas las citas y listas de referencias** que contienen (de la tesis, del manuscrito previo, de los artículos de referencia) a una tabla:
+
+| # | Cita tal como aparece en el archivo | Archivo de origen (y página o sección) | DOI / PMID si aparece | ¿Se usa en el manuscrito? ¿Para qué frase? | Estado (verificada / `[VERIFICAR]`) |
+|---|---|---|---|---|---|
+
+Reglas:
+- La cita se copia **tal como viene en el archivo**; solo se cambia el formato al estilo de la revista. No se completan datos faltantes de memoria (regla 12 de `SKILL.md`).
+- Al final, **la lista de referencias del manuscrito se construye con este banco**. Cada afirmación bibliográfica del texto se respalda primero con una cita del banco.
+- Si una cita del banco no respalda la frase donde se quiere usar (otra población, otro desenlace), no se usa ahí.
+- Si los archivos no cubren una afirmación, se marca `[CITA]` o se propone una referencia de búsqueda propia, rotulada aparte como "recuperada por búsqueda", para que el autor decida.
+- Si hay herramientas, comprobar existencia y metadatos de las citas del banco (`scripts/verificar_referencias.py`, PubMed, Crossref); las no comprobadas quedan `[VERIFICAR]`.
+
 ## 2. Ficha de contexto (se construye, no se inventa)
 
 Llenar cada campo **solo con lo que consta en el material**, indicando de dónde salió. Lo que no consta queda como `[COMPLETAR]`.
